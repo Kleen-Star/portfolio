@@ -191,10 +191,6 @@ body {
 .main .bio .bio-main .value small {
     font-weight: normal;
 }
-/*
-.main .bio .bio-main .value #first-value {
-    border-left: none;
-} */
 
 .main .service, .portfolio {
     background-color: #f9f8fa;
@@ -240,8 +236,6 @@ body {
 }
 
 .servleft .cont {
-    /*line-height: 15px;
-    font-size: 15px; */
     padding-left: 10px;
 }
 
@@ -272,12 +266,24 @@ body {
     line-height: 15px;
 }
 
+.left-frame, .right-frame {
+  width: 48%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.left-frame {
+  float: right;
+  vertical-align: top;
+}
+
 .resleft,
 .resright {
-    width: 48%;
+    width: 100%;
     height: auto;
     line-height: 15px;
     padding-left: 10px;
+    margin-bottom: 10px;
     font-size: 15px;
     border: 1px solid #292828;
     border-radius: 15px;
@@ -321,6 +327,11 @@ body {
 .main .resume .res-div-title .edu {
     width: 45%;
     float: left;
+}
+
+.main .skills {
+  margin-top: 10%;
+  text-align: center;
 }
 
 progress {
@@ -497,11 +508,11 @@ padding-bottom: 30px;
     height: inherit;
     margin-top: 10px;
     font-size: 20px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
 }
 
   .servleft, .servright, .skileft, .skiright, .resleft, .resright,
-  .portleft, .midport, .portright {
+  .portleft, .midport, .portright, .left-frame, .right-frame{
     width: 100%;
     float: none;
     margin: 0 auto 10px auto;
@@ -517,6 +528,10 @@ padding-bottom: 30px;
 
 .skillsframe h3 {
     text-align: center;
+}
+
+.resframe .edu, .resframe .exp {
+  text-align: center;
 }
 
   .resume .res-div-title {
